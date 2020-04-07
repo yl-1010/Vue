@@ -29,7 +29,7 @@
 
 ##### 初始化及挂载
 
-![image](https://note.youdao.com/yws/public/resource/ac2c1bd4cc84a9a9998a55bb2e8ef318/xmlnote/E04924C47A3F439D9751385E8C598B5B/197)
+![image](https://note.youdao.com/yws/public/resource/ac2c1bd4cc84a9a9998a55bb2e8ef318/xmlnote/E04924C47A3F439D9751385E8C598B5B/197)<br>
 在 new Vue() 之后。 Vue 会调用 _init 函数进行初始化，也就是这里的 init 过程，它会初始化生命周期、事件、 props、 methods、 data、 computed 与 watch 等。其中最重要的是通过 Object.defineProperty 设置 setter 与 getter 函数，用来实现「响应式」以及「依赖收集」
 
 初始化之后调用 $mount 会挂载组件，如果是运行时编译，即不存在 render function 但是存在 template 的情况，需要进行「编译」步骤。
